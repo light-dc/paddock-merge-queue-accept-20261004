@@ -1,0 +1,11 @@
+name: Paddock disposable queue acceptance
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+jobs:
+  connector-queue:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Paddock disposable merge queue acceptance marker'
